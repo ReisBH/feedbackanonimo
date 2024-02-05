@@ -6,8 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $to = 'rafaelreiss@gmail.com';
     $subject = 'Worker Complaint Report';
     $message = "Restaurant: $restaurant\n\nComplaint: $complaint";
-    $headers = 'From: noreply@example.com' . "\r\n" .
-                'Reply-To: noreply@example.com' . "\r\n" .
+    $headers = 'From: rafaelreiss@gmail.com' . "\r\n" .
+                'Reply-To: rafaelreiss@gmail.com' . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
 
     if (mail($to, $subject, $message, $headers)) {
