@@ -3,7 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $restaurant = $_POST['restaurant'];
     $complaint = $_POST['complaint'];
 
-    $to = 'your-email@example.com';
+    $to = 'rafaelreiss@gmail.com';
     $subject = 'Worker Complaint Report';
     $message = "Restaurant: $restaurant\n\nComplaint: $complaint";
     $headers = 'From: noreply@example.com' . "\r\n" .
